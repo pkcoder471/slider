@@ -1,14 +1,62 @@
 .slides{
-    width: 700px;
+    width: 600px;
     height: 400px;
     display: flex;
     overflow: hidden;
-    justify-items: center;
+    
+}
+.slide{
+    width: 600px;
+    height: 400px;
+    transition: 2s;
+    background-size: cover;
 }
 .slider{
     display: flex;
     justify-content: center;
 }
-.inputs{
-    display: none;
+img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
 }
+#radio1:checked~.first { 
+    margin-left: 0; 
+} 
+
+#radio2:checked~.first { 
+    margin-left: -100%; 
+} 
+
+#radio3:checked~.first { 
+    margin-left: -200%; 
+} 
+
+#radio4:checked~.first { 
+    margin-left: -300%; 
+} 
+input{
+  display: none;  
+}
+.manual-buttons{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.manual-btn{
+    border: 2px solid black;
+    margin-left: 50px;
+    padding:5px;
+    border-radius: 50%;
+    height: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.manual-btn:hover{
+    background-color: black;
+}
+
+
