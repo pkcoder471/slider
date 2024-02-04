@@ -1,0 +1,14 @@
+.slides{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    justify-items: center;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.inputs{
+    display: none;
+}
